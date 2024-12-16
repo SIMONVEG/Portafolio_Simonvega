@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas de Derivación</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #2d3b2d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chalkboard {
+            background-color: #324232;
+            border: 10px solid #282e28;
+            border-radius: 15px;
+            width: 80%;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #b5d8b5;
+            text-align: left;
+        }
+
+        p, li {
+            font-size: 1.2em;
+            color: #d8e8d8;
+        }
+
+        code {
+            background-color: transparent;
+            font-size: 1.3em;
+            color: #f4f4f4;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chalkboard">
+        <h2>1. Funciones trigonométricas</h2>
+        <ul>
+            <li><strong>Derivada de <code>sin(x)</code>:</strong> <code>d/dx [sin(x)] = cos(x)</code></li>
+            <li><strong>Derivada de <code>cos(x)</code>:</strong> <code>d/dx [cos(x)] = -sin(x)</code></li>
+            <li><strong>Derivada de <code>tan(x)</code>:</strong> <code>d/dx [tan(x)] = sec²(x)</code></li>
+            <li><strong>Derivada de <code>cot(x)</code>:</strong> <code>d/dx [cot(x)] = -csc²(x)</code></li>
+            <li><strong>Derivada de <code>sec(x)</code>:</strong> <code>d/dx [sec(x)] = sec(x)tan(x)</code></li>
+            <li><strong>Derivada de <code>csc(x)</code>:</strong> <code>d/dx [csc(x)] = -csc(x)cot(x)</code></li>
+        </ul>
+
+        <h2>2. Función logaritmo natural</h2>
+        <p><strong>Derivada de <code>ln(x)</code>:</strong> <code>d/dx [ln(x)] = 1/x</code></p>
+
+        <h2>3. Función logaritmo de base <em>a</em></h2>
+        <p><strong>Derivada de <code>log<sub>a</sub>(x)</code>:</strong> <code>d/dx [log<sub>a</sub>(x)] = 1 / (x ln(a))</code></p>
+
+        <h2>4. Funciones exponenciales</h2>
+        <ul>
+            <li><strong>Derivada de <code>e<sup>x</sup></code>:</strong> <code>d/dx [e<sup>x</sup>] = e<sup>x</sup></code></li>
+            <li><strong>Derivada de <code>a<sup>x</sup></code>:</strong> <code>d/dx [a<sup>x</sup>] = a<sup>x</sup> ln(a)</code></li>
+        </ul>
+    </div>
+
+</body>
+</html>
