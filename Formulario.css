@@ -1,0 +1,99 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Capa superpuesta */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Detrás de los elementos principales */
+  overflow: hidden;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 15s infinite;
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+  0% { background-image: url('Formulario.png'); }
+  33% { background-image: url('Formulario1.png'); }
+  66% { background-image: url('Formulario2.png'); }
+  100% { background-image: url('Formulario3.png'); }
+}
+
+/* Contenedor del formulario */
+.form-container {
+  width: 400px;
+  background: linear-gradient(#21212179, #21212177) padding-box,
+              linear-gradient(145deg, transparent 35%,#0000007c, #00000064) border-box;
+  border: 4px solid transparent;
+  padding: 42px 40px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.form-container .form-group label {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+}
+.form-container .form-group input,
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+.form-container button {
+  background: #313131;
+  color: #ffffff;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: #fff;
+  color: #000;
+}

@@ -1,0 +1,57 @@
+/* Contenedor de comentarios */
+.comentarios-section {
+    position: relative;
+    max-width: 1290px; /* Ajusta según tu diseño */
+    margin: 0; /* Centra el contenedor */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: #ffffff;
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    max-height: 500px; /* Define un límite de altura */
+    border-radius: 8px
+    margin-bottom: 0px; /* Espacio arriba del footer */
+}
+
+/* Estilo de cada comentario */
+.comentarios-section p {
+    margin: 10px 12px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0); /* Línea divisoria */
+}
+
+/* Añadir animación para comentarios recientes */
+.comentarios-section p.nuevo-comentario {
+    animation: desvanecer 1s ease-out;
+}
+
+/* Animación de desvanecimiento */
+@keyframes desvanecer {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Coloca el contenedor justo encima del footer */
+footer {
+    margin-top: 0px;
+}
+
+.neu-button {
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+    color: #4d4d4d;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 40px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid rgb(206, 206, 206);
+  }
+  
+  .neu-button:hover {
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+  }
+  
+  .neu-button:focus {
+    outline: none;
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+  }
