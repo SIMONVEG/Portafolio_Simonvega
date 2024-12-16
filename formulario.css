@@ -1,0 +1,76 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black, gold);
+    font-family: Arial, sans-serif;
+}
+
+#pedido-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+#pedido-container h2 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#pedido-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#pedido-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#pedido-container input[type="text"],
+#pedido-container input[type="email"],
+#pedido-container input[type="tel"],
+#pedido-container input[type="number"],
+#pedido-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+#pedido-container input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#pedido-container input[type="submit"]:hover {
+    background-color: #45a049;
+}

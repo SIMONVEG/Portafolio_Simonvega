@@ -1,0 +1,322 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #050505, #FFD700);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.header-content p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+nav  {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 1px auto;
+    padding: 10px; /* Reduce el padding si deseas que el contenido esté más cerca */
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-section, .products-section, .Damas h2 {
+    margin-top: 20px; /* Reduce el margen superior */
+    margin-bottom: 20px; /* Ajusta el margen inferior para dar un poco de espacio */
+    text-align: center;
+}
+
+.home-section h2, .products-section h2, .Damas h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px; /* Reduce el margen inferior del título */
+    color: #000000;
+}
+
+
+.home-section p {
+    font-size: 1.1em;
+    color: #000000;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 15px 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.product p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product button {
+    padding: 12px 25px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #FFD700;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-content .logo {
+    position: absolute;
+    top: -0.5cm;
+    left: -1cm;
+    width: 230px; /* Ajusta el tamaño del logotipo según necesites */
+    height: auto;
+}
+
+.header-content h1 {
+    margin-top: 0cm; /* Asegura que el título no se superponga con el logotipo */
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.sin-subrayado {
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 851px; /* Ancho del carrusel más largo */
+    height: 315px; /* Altura reducida para dar forma rectangular */
+    margin:20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%; /* Ajustar para manejar 3 imágenes en fila */
+}
+
+.carousel img {
+    width: 851px; 
+    height: 315px; /* La imagen ahora se ajusta para cubrir la altura */
+    flex: 1 0 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin deformarse */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Fondo transparente */
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px; /* Tamaño de texto para las flechas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prev {
+    left: 10px; /* Espacio respecto al borde */
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Ligero fondo al hacer hover */
+    transform: translateY(-50%) scale(1.1); /* Aumenta el tamaño en un 10% al hacer hover */
+}
+
+.prev:active, .next:active {
+    transform: translateY(-50%) scale(1.05); /* Un poco más pequeño al hacer clic */
+}
+
+.perfume-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centramos el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+}
+
+.about-perfumes h2,
+.decant-info h2,
+.available-sizes h2 {
+    text-align: center; /* Títulos centrados */
+    margin-bottom: 10px; /* Espacio debajo de los títulos */
+    color: #333; /* Color del texto */
+}
+
+p {
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    line-height: 1.6; /* Mayor altura de línea para mejor legibilidad */
+    color: #555; /* Color más suave para el texto */
+}
+
+.products-section {
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin-bottom: 15px; /* Espacio debajo de la lista */
+}
+
+ul li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    font-size: 16px; /* Tamaño de fuente más legible */
+    color: #333; /* Color del texto */
+}
+
+.product-image {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 20px auto; /* Centramos la imagen */
+    border-radius: 20px; /* Bordes redondeados para la imagen */
+    max-width: 70%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Estilos específicos para el botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s ease-out forwards; /* Animación de entrada */
+}
+
+.floating-button button {
+    background: linear-gradient(135deg, #ffd700, #000000); /* Degradado dorado a negro */
+    color: white;
+    padding: 12px 24px; /* Espaciado interno */
+    border: none;
+    border-radius: 50px; /* Bordes completamente redondeados */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el ratón */
+.floating-button button:hover {
+    transform: translateY(-5px); /* Levanta el botón al pasar el ratón */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
